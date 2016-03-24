@@ -4,6 +4,7 @@
 STORAGE="backups"
 
 function list_dbs() {
+	echo "Select database name";
 	show_dbs=`psql -c '\copy (SELECT datname FROM pg_database WHERE datistemplate = false) To STDOUT WITH CSV' | grep -v postgres | xargs`
 
 	names=( $show_dbs )
@@ -17,6 +18,7 @@ function list_dbs() {
 
 function backup() {
 	list_dbs;
+	echo "Dumping database...";
 	_now=$(date +"%m%d%Y%H%M%S");
 	_file="$STORAGE/backup_$_now.sql";
 
@@ -51,11 +53,6 @@ function restore() {
 	
 }
 
-
-
-#backup;
-#restore;
-
 select m in b r
 do
   case "$m" in
@@ -70,6 +67,3 @@ do
 	*) echo invalid option;;
   esac
 done
-
-
-echo "|$name|"
