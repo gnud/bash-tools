@@ -1,9 +1,0 @@
-#!/bin/bash
-
-sudo /sbin/ip route flush table all
-sudo /sbin/ip route flush table main
-
-sudo service network-manager restart
-#sleep 5
-#sudo ip route del 169.254.0.0/16
-#sudo ip route del 169.254.0.0
