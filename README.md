@@ -13,7 +13,7 @@ https://github.com/gnud/bash-db2erd
 https://github.com/gnud/bash-fixandroid
 
 
-Install with basher
+Install with [basher](https://github.com/basherpm/basher)
 
 ```
 basher install gnud/bash-memory
