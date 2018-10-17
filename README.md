@@ -16,7 +16,7 @@ https://github.com/gnud/bash-fixandroid
 Install with basher
 
 ```
-basher install gnud/bash-freem
+basher install gnud/bash-memory
 ```
 
 run
