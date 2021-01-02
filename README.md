@@ -10,7 +10,7 @@ https://github.com/gnud/bash-backmeup
 
 https://github.com/gnud/bash-db2erd
 
-https://github.com/gnud/bash-fixandroid
+https://github.com/gnud/bash-fix-ssdm-login
 
 
 Install with [basher](https://github.com/basherpm/basher)
